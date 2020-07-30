@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.3 on darwin)" generated="20200717 14:20:52.504" rpa="false">
+<suite id="s1" name="Tst Courses" source="/Users/anadionisio/Desktop/cx-skillable-ui-qa/tests/tst_courses.robot">
+<kw name="Full Login" library="microsoft_login_page" type="setup">
+<kw name="Apply Browser Settings" library="common">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
+<arg>sys</arg>
+</arguments>
+<assign>
+<var>${chrome_options}</var>
+</assign>
+<msg timestamp="20200717 14:20:52.774" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7fcfd13a06a0&gt;</msg>
+<status status="PASS" starttime="20200717 14:20:52.774" endtime="20200717 14:20:52.774"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>test-type</arg>
+</arguments>
+<status status="PASS" starttime="20200717 14:20:52.774" endtime="20200717 14:20:52.774"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-extensions</arg>
+</arguments>
+<status status="PASS" starttime="20200717 14:20:52.774" endtime="20200717 14:20:52.775"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-gpu</arg>
+</arguments>
+<status status="PASS" starttime="20200717 14:20:52.775" endtime="20200717 14:20:52.775"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>--no-sandbox</arg>
+</arguments>
+<status status="PASS" starttime="20200717 14:20:52.775" endtime="20200717 14:20:52.775"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>--lang\=en.uk</arg>
+</arguments>
+<status status="PASS" starttime="20200717 14:20:52.775" endtime="20200717 14:20:52.775"></status>
+</kw>
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<arguments>
+<arg>Chrome</arg>
+<arg>chrome_options=${chrome_options}</arg>
+</arguments>
+<msg timestamp="20200717 14:20:52.776" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20200717 14:20:52.776" endtime="20200717 14:20:54.766"></status>
+</kw>
+<status status="PASS" starttime="20200717 14:20:52.773" endtime="20200717 14:20:54.766"></status>
+</kw>
+<kw name="Navigate to Skillable" library="common">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>https://backoffice.dev.cx-apps.io/</arg>
+</arguments>
+<msg timestamp="20200717 14:20:54.767" level="INFO">Opening url 'https://backoffice.dev.cx-apps.io/'</msg>
+<status status="PASS" starttime="20200717 14:20:54.767" endtime="20200717 14:20:55.733"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<status status="PASS" starttime="20200717 14:20:55.734" endtime="20200717 14:20:55.735"></status>
+</kw>
+<kw name="Set Selenium Timeout" library="SeleniumLibrary">
+<doc>Sets the timeout that is used by various keywords.</doc>
+<arguments>
+<arg>30s</arg>
+</arguments>
+<status status="PASS" starttime="20200717 14:20:55.735" endtime="20200717 14:20:55.736"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200717 14:20:55.736" endtime="20200717 14:20:55.885"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" starttime="20200717 14:20:55.885" endtime="20200717 14:20:55.886"></status>
+</kw>
+<status status="PASS" starttime="20200717 14:20:54.766" endtime="20200717 14:20:55.886"></status>
+</kw>
+<kw name="Login with Microsoft Account" library="microsoft_login_page">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2000ms</arg>
+</arguments>
+<msg timestamp="20200717 14:20:57.888" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200717 14:20:55.887" endtime="20200717 14:20:57.888"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id='landing']/div/div[1]/a</arg>
+</arguments>
+<msg timestamp="20200717 14:20:57.889" level="INFO">Clicking element '//*[@id='landing']/div/div[1]/a'.</msg>
+<status status="PASS" starttime="20200717 14:20:57.889" endtime="20200717 14:20:59.898"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>500ms</arg>
+</arguments>
+<msg timestamp="20200717 14:21:00.400" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20200717 14:20:59.899" endtime="20200717 14:21:00.400"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>i0116</arg>
+<arg>HQDIOANA@carlsberggroup.com</arg>
+</arguments>
+<msg timestamp="20200717 14:21:00.400" level="INFO">Typing text 'HQDIOANA@carlsberggroup.com' into text field 'i0116'.</msg>
+<status status="PASS" starttime="20200717 14:21:00.400" endtime="20200717 14:21:00.564"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>500ms</arg>
+</arguments>
+<msg timestamp="20200717 14:21:01.065" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20200717 14:21:00.564" endtime="20200717 14:21:01.065"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>idSIButton9</arg>
+</arguments>
+<msg timestamp="20200717 14:21:01.066" level="INFO">Clicking element 'idSIButton9'.</msg>
+<status status="PASS" starttime="20200717 14:21:01.065" endtime="20200717 14:21:01.124"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1000ms</arg>
+</arguments>
+<msg timestamp="20200717 14:21:02.125" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200717 14:21:01.124" endtime="20200717 14:21:02.125"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>i0118</arg>
+<arg>_YezFJ2E</arg>
+</arguments>
+<msg timestamp="20200717 14:21:02.126" level="INFO">Typing text '_YezFJ2E' into text field 'i0118'.</msg>
+<status status="PASS" starttime="20200717 14:21:02.125" endtime="20200717 14:21:02.247"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1000ms</arg>
+</arguments>
+<msg timestamp="20200717 14:21:03.249" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200717 14:21:02.247" endtime="20200717 14:21:03.249"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>idSIButton9</arg>
+</arguments>
+<msg timestamp="20200717 14:21:03.250" level="INFO">Clicking element 'idSIButton9'.</msg>
+<status status="PASS" starttime="20200717 14:21:03.250" endtime="20200717 14:21:03.928"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>500ms</arg>
+</arguments>
+<msg timestamp="20200717 14:21:04.429" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20200717 14:21:03.928" endtime="20200717 14:21:04.429"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>idSIButton9</arg>
+</arguments>
+<msg timestamp="20200717 14:21:04.429" level="INFO">Clicking element 'idSIButton9'.</msg>
+<status status="PASS" starttime="20200717 14:21:04.429" endtime="20200717 14:21:05.926"></status>
+</kw>
+<status status="PASS" starttime="20200717 14:20:55.887" endtime="20200717 14:21:05.926"></status>
+</kw>
+<kw name="Validate Home Page" library="home_page">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200717 14:21:06.927" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200717 14:21:05.926" endtime="20200717 14:21:06.928"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${skillable_icon}</arg>
+</arguments>
+<msg timestamp="20200717 14:21:07.420" level="INFO">Current page contains element '//*[@id='navigation']/div/div/div[2]/a'.</msg>
+<status status="PASS" starttime="20200717 14:21:06.928" endtime="20200717 14:21:07.420"></status>
+</kw>
+<status status="PASS" starttime="20200717 14:21:05.926" endtime="20200717 14:21:07.420"></status>
+</kw>
+<kw name="Access Skillable Page" library="home_page">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${skillable_icon}</arg>
+</arguments>
+<msg timestamp="20200717 14:21:07.420" level="INFO">Clicking element '//*[@id='navigation']/div/div/div[2]/a'.</msg>
+<status status="PASS" starttime="20200717 14:21:07.420" endtime="20200717 14:21:07.478"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200717 14:21:08.479" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200717 14:21:07.478" endtime="20200717 14:21:08.479"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${library_text}</arg>
+</arguments>
+<msg timestamp="20200717 14:21:08.491" level="INFO">Current page contains element '//*[@id='child-app']/div/div/div/div[1]/div'.</msg>
+<status status="PASS" starttime="20200717 14:21:08.479" endtime="20200717 14:21:08.491"></status>
+</kw>
+<status status="PASS" starttime="20200717 14:21:07.420" endtime="20200717 14:21:08.491"></status>
+</kw>
+<status status="PASS" starttime="20200717 14:20:52.773" endtime="20200717 14:21:08.491"></status>
+</kw>
+<test id="s1-t1" name="Course Creation - Close Window">
+<kw name="Click on Create Course button" library="home_page">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${create_course}</arg>
+</arguments>
+<msg timestamp="20200717 14:21:08.493" level="INFO">Clicking element '//*[@id='child-app']/div/div/div/div[2]/a/button/div'.</msg>
+<status status="PASS" starttime="20200717 14:21:08.493" endtime="20200717 14:21:08.555"></status>
+</kw>
+<status status="PASS" starttime="20200717 14:21:08.492" endtime="20200717 14:21:08.555"></status>
+</kw>
+<kw name="Click on X button to exit page" library="create_course_page">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${exit_button}</arg>
+</arguments>
+<msg timestamp="20200717 14:21:08.556" level="INFO">Clicking element '//*[@id='child-app']/div/div/div/div[1]/div'.</msg>
+<status status="PASS" starttime="20200717 14:21:08.556" endtime="20200717 14:21:08.605"></status>
+</kw>
+<status status="PASS" starttime="20200717 14:21:08.556" endtime="20200717 14:21:08.605"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20200717 14:21:11.605" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200717 14:21:08.605" endtime="20200717 14:21:11.606"></status>
+</kw>
+<kw name="Click Cancel on pop up window" library="create_course_page">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${cancel_button}</arg>
+</arguments>
+<msg timestamp="20200717 14:21:11.607" level="INFO">Clicking element '//*[@class='cx-backoffice-skillable--button-module__button--38F6g cx-backoffice-skillable--button-module__regular--2-Bz0']'.</msg>
+<status status="PASS" starttime="20200717 14:21:11.607" endtime="20200717 14:21:11.648"></status>
+</kw>
+<status status="PASS" starttime="20200717 14:21:11.606" endtime="20200717 14:21:11.648"></status>
+</kw>
+<kw name="Click on X button to exit page" library="create_course_page">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${exit_button}</arg>
+</arguments>
+<msg timestamp="20200717 14:21:11.649" level="INFO">Clicking element '//*[@id='child-app']/div/div/div/div[1]/div'.</msg>
+<status status="PASS" starttime="20200717 14:21:11.649" endtime="20200717 14:21:11.675"></status>
+</kw>
+<status status="PASS" starttime="20200717 14:21:11.648" endtime="20200717 14:21:11.675"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200717 14:21:12.676" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200717 14:21:11.675" endtime="20200717 14:21:12.677"></status>
+</kw>
+<kw name="Click on Yes on pop up window" library="create_course_page">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${yes_button}</arg>
+</arguments>
+<msg timestamp="20200717 14:21:12.678" level="INFO">Clicking element '//*[@class='cx-backoffice-skillable--courseCreation-module__modalLeaveText--3-CAI']'.</msg>
+<status status="PASS" starttime="20200717 14:21:12.678" endtime="20200717 14:21:12.736"></status>
+</kw>
+<status status="PASS" starttime="20200717 14:21:12.677" endtime="20200717 14:21:12.737"></status>
+</kw>
+<kw name="Assert existence of Cards in the Page" library="home_page">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${course_area}</arg>
+</arguments>
+<msg timestamp="20200717 14:21:12.762" level="INFO">Current page contains element '//*[@id="child-app"]/div/div/div/div[3]/div/div[2]'.</msg>
+<status status="PASS" starttime="20200717 14:21:12.737" endtime="20200717 14:21:12.762"></status>
+</kw>
+<status status="PASS" starttime="20200717 14:21:12.737" endtime="20200717 14:21:12.762"></status>
+</kw>
+<status status="PASS" starttime="20200717 14:21:08.491" endtime="20200717 14:21:12.763" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Course Creation - Course Title">
+<kw name="Click on Create Course button" library="home_page">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${create_course}</arg>
+</arguments>
+<msg timestamp="20200717 14:21:12.765" level="INFO">Clicking element '//*[@id='child-app']/div/div/div/div[2]/a/button/div'.</msg>
+<status status="PASS" starttime="20200717 14:21:12.765" endtime="20200717 14:21:12.811"></status>
+</kw>
+<status status="PASS" starttime="20200717 14:21:12.765" endtime="20200717 14:21:12.811"></status>
+</kw>
+<kw name="Field title is present" library="create_course_page">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${title_field_label}</arg>
+</arguments>
+<msg timestamp="20200717 14:21:12.828" level="INFO">Current page contains element '//*[@id="child-app"]/div/div/div/div[3]/div/div[1]/label'.</msg>
+<status status="PASS" starttime="20200717 14:21:12.811" endtime="20200717 14:21:12.828"></status>
+</kw>
+<status status="PASS" starttime="20200717 14:21:12.811" endtime="20200717 14:21:12.828"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>500ms</arg>
+</arguments>
+<msg timestamp="20200717 14:21:13.329" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20200717 14:21:12.828" endtime="20200717 14:21:13.330"></status>
+</kw>
+<kw name="Input more that 64 characters" library="create_course_page">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${title_input_field}</arg>
+<arg>Input Text for testInput Text for testInput Text for Input Text for test</arg>
+</arguments>
+<msg timestamp="20200717 14:21:13.331" level="INFO">Typing text 'Input Text for testInput Text for testInput Text for Input Text for test' into text field 'titleInput'.</msg>
+<status status="PASS" starttime="20200717 14:21:13.331" endtime="20200717 14:21:13.635"></status>
+</kw>
+<status status="PASS" starttime="20200717 14:21:13.330" endtime="20200717 14:21:13.635"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>500ms</arg>
+</arguments>
+<msg timestamp="20200717 14:21:14.136" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20200717 14:21:13.635" endtime="20200717 14:21:14.136"></status>
+</kw>
+<kw name="Error message for more than 64 characters" library="create_course_page">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${error_message}</arg>
+</arguments>
+<msg timestamp="20200717 14:21:14.148" level="INFO">Current page contains element '//*[@id="child-app"]/div/div/div/div[3]/div/div[2]/div'.</msg>
+<status status="PASS" starttime="20200717 14:21:14.137" endtime="20200717 14:21:14.148"></status>
+</kw>
+<status status="PASS" starttime="20200717 14:21:14.137" endtime="20200717 14:21:14.148"></status>
+</kw>
+<status status="PASS" starttime="20200717 14:21:12.764" endtime="20200717 14:21:14.148" critical="yes"></status>
+</test>
+<test id="s1-t3" name="Course Creation - Edit course">
+<kw name="Click on the 3 dots" library="home_page">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${three_dots_button}</arg>
+</arguments>
+<msg timestamp="20200717 14:21:14.150" level="INFO">Clicking element '//*[@id="1ce92e8f-ff7b-4323-ae39-f43ad4fc694b"]/div/div[2]/div[2]/div/button'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200717 14:21:16.708" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200717 14:21:16.161" endtime="20200717 14:21:16.708"></status>
+</kw>
+<msg timestamp="20200717 14:21:16.714" level="FAIL">Element with locator '//*[@id="1ce92e8f-ff7b-4323-ae39-f43ad4fc694b"]/div/div[2]/div[2]/div/button' not found.</msg>
+<status status="FAIL" starttime="20200717 14:21:14.150" endtime="20200717 14:21:16.714"></status>
+</kw>
+<status status="FAIL" starttime="20200717 14:21:14.149" endtime="20200717 14:21:16.715"></status>
+</kw>
+<status status="FAIL" starttime="20200717 14:21:14.149" endtime="20200717 14:21:16.715" critical="yes">Element with locator '//*[@id="1ce92e8f-ff7b-4323-ae39-f43ad4fc694b"]/div/div[2]/div[2]/div/button' not found.</status>
+</test>
+<status status="FAIL" starttime="20200717 14:20:52.506" endtime="20200717 14:21:16.716"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="1">Critical Tests</stat>
+<stat pass="2" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="1" id="s1" name="Tst Courses">Tst Courses</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
