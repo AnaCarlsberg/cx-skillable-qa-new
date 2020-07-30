@@ -30,7 +30,7 @@ Course Creation - Course Title
     Field title is present
     Sleep   500ms
     Input more that 64 characters
-    Sleep   500ms
+    Sleep   550ms
     Error message for more than 64 characters
 
 # Course Creation - Create a course
