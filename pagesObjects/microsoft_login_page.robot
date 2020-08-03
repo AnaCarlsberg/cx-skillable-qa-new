@@ -5,7 +5,7 @@ Library           BuiltIn
 Library           String
 
 *** Keywords ***
-Login with Microsoft Account
+Login With Microsoft Account
     Sleep   2000ms
     Click Element   //*[@id='landing']/div/div[1]/a
     Sleep   500ms

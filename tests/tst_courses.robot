@@ -14,57 +14,55 @@ Resource          ../pagesObjects/course_detail_page.robot
 
 *** Test Cases ***
 Course Creation - Close Window
-    Click on Create Course button
-    Click on X button to exit page
+    Click On Create Course Button
+    Click On X Button To Exit Page
     Sleep   3s
-    Click Cancel on pop up window
-    Click on X button to exit page
+    Click Cancel On Pop Up Window
+    Click On X Button To Exit Page
     Sleep   1s
-    Click on Yes on pop up window
-    Assert existence of Cards in the Page
-
+    Click On Yes On Pop Up Window
+    
 #Course Creation - Upload Image
 
 Course Creation - Course Title
-    Click on Create Course button
-    Field title is present
+    Click On Create Course Button
+    Field Title Is Present
     Sleep   500ms
-    Input more that 64 characters
+    Input More Than 64 Characters
     Sleep   550ms
-    Error message for more than 64 characters
+    Error Message For More Than 64 Characters
 
-# Course Creation - Create a course
-#     Click on Create Course button
-#     Sleep   500ms
-#     Input a valid title
-#     Click on language field
-#     Choose a language
-#     Click on Create button
-#     Validate that alert about course creation is present
-#     Validate that the course name is present
-#     Click on back arrow in the screen
-#     Assert existence of Ana Automation Course
-#     Click on Ana Automation Course
+Course Creation - Create a course
+    Click On Create Course Button
+    Sleep   500ms
+    Input A Valid Title
+    Click On Language Field
+    Choose A Language
+    Click On Create Button
+    Validate That Alert About Course Creation Is Present
+    Validate That The Course Name Is Present
+    Click On Back Arrow In The Screen
+    Validate Existence Of Ana Automation Course
+    Click On Ana Automation Course
 
-# Course Creation - Delete course
-#     Click on the 3 dots
-#     Click on Delete Option
-#     Sleep   2000ms
-#     Click on the square
-#     Sleep   1500ms
-#     Click on Yes Delete 
+Course Creation - Delete course
+    Click On The 3 Dots
+    Click On Delete Option
+    Sleep   2s
+    Click On The Square
+    Sleep   1.5s
+    Click On Yes Delete 
 
 Course Creation - Edit course
-    Click on the 3 dots
-    Click on Settings Option
+    Click On The 3 Dots
+    Click On Settings Option
 
-
-# Enable Course on Market
-#     Click on Market Filter
-#     Sleep   500ms 
-#     Choose UK Market
-#     Sleep   500ms
-#     Validate Enable/Disable button is present
-#     Enable/Disable Course on Market
+Enable Course on Market
+    Click On Market Filter
+    Sleep   500ms 
+    Choose UK Market
+    Sleep   500ms
+    Validate Enable/Disable Button Is Present
+    Enable/Disable Course On Market
 
 

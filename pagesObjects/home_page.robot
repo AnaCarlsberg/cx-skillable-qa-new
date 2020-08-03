@@ -42,71 +42,70 @@ Access Skillable Page
     Sleep   1s
     Page Should Contain Element      ${library_text}
 
-Assert existence of Global tab
+Validate Existence Of Global Tab
     Page Should Contain Element      ${global_tab}
 
-Assert existence of Product tab
+Validate Existence Of Product Tab
     Page Should Contain Element      ${product_tab} 
 
-Assert existence of Market tab
+Validate Existence Of Market Tab
     Page Should Contain Element      ${market_tab} 
 
-Assert existence of Outlet tab
+Validate Existence Of Outlet Tab
     Page Should Contain Element      ${outlet_tab}
 
-Assert existence of Filter Options
+Validate Existence Of Filter Options
     Page Should Contain Element      ${all_markets}
     Page Should Contain Element      ${relevance} 
 
-Assert existence of Cards in the Page
+Validate Existence Of Cards In The Page
     Page Should Contain Element      ${course_area}
 
 Validate Card Elements
     Page Should Contain Element     ${course_image}
     Page Should Contain Element     ${course_title}
     Page Should Contain Element     ${number_lessons}
-    #Page Should Contain Element    ${eye_icon} 
     Page Should Contain Element     ${three_dots_button}
     Click Element                   ${three_dots_button}
     Click Element                   ${course_settings}
 
-Click on Market tab
+Click On Market Tab
     Click Element                   ${market_tab}
 
-Click on Create Course button
+Click On Create Course Button
     Click Element                   ${create_course}
 
-Assert existence of Ana Automation Course
+Validate Existence Of Ana Automation Course
     Page Should Contain Element     ${assert_course_name} 
 
-Click on Ana Automation Course
+Click On Ana Automation Course
     Click Element     ${click_course} 
     
-Click on the 3 dots
+Click On The 3 Dots
     Click Element    ${three_dots_button}
 
-Click on Delete Option
+Click On Delete Option
     Click Element   ${course_delete}
 
-Click on Settings Option
+Click On Settings Option
     Click Element   ${course_settings} 
 
-Click on the square
+Click On The Square
     Click Element   ${checkbox_delete_course}
 
-Click on Yes Delete 
+Click On Yes Delete 
     Click Element   ${yes_delete_msg} 
 
-Click on Market Filter  
+Click On Market Filter  
     Click Element   ${all_markets}
 
 Choose UK Market
     Click Element   ${uk_market}    
 
-Validate Enable/Disable button is present
+Validate Enable/Disable Button Is Present
     Page Should Contain Element     ${enabled_button}
 
-Enable/Disable Course on Market
+Enable/Disable Course On Market
     Click Element   ${enabled_button}
 
 Access Invite Users Page

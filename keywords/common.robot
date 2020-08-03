@@ -16,14 +16,9 @@ Apply Browser Settings
     Call Method    ${chrome_options}    add_argument    --lang\=en.uk
     Create WebDriver    Chrome   chrome_options=${chrome_options}
 
-Navigate to Skillable
+Navigate To Skillable
     Go To   https://backoffice.dev.cx-apps.io/
     Set Selenium Implicit Wait   5s
     Set Selenium Timeout    30s
     Maximize Browser Window
     Set Browser Implicit Wait    2
-
-
-   
-
-

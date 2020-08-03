@@ -13,19 +13,19 @@ ${button_lesson_top}        //*[@id="child-app"]/div/div/div[2]/div[1]/button/di
 
 
 *** Keywords ***
-Validate that alert about course creation is present
+Validate That Alert About Course Creation Is Present
     Page Should Contain Element     ${alert_course_creation}
 
-Validate that the course name is present
+Validate That The Course Name Is Present
     Page Should Contain Element     ${course_name}
 
-Click on back arrow in the screen
+Click On Back Arrow In The Screen
     Click Element   ${back_arrow}
 
-Click on Create Lesson button
+Click On Create Lesson Button
     Click Element   ${button_create_lesson}    
 
-Click on Create Lesson button on top of the Page
+Click On Create Lesson Button On Top Of The Page
     Click Element   ${button_lesson_top}
 
 

@@ -11,10 +11,10 @@ Resource          ../pagesObjects/home_page.robot
 
 *** Test Cases ***
 Access Market tab and validate that all elements exists in screen
-    Click on Market tab
-    Assert existence of Filter Options
-    Assert existence of Cards in the Page
-    Click on Market tab
+    Click On Market Tab
+    Validate Existence Of Filter Options
+    Validate Existence Of Cards In The Page
+    Click On Market Tab
     Validate Card Elements
 
     

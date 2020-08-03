@@ -11,12 +11,12 @@ Resource          ../pagesObjects/home_page.robot
 
 *** Test Cases ***
 Access Global tab and validate that all elements exists in screen
-    Assert existence of Global tab
-    Assert existence of Product tab
-    Assert existence of Market tab
-    Assert existence of Outlet tab
-    Assert existence of Filter Options
-    Assert existence of Cards in the Page
+    Validate Existence Of Global Tab
+    Validate Existence Of Product Tab
+    Validate Existence Of Market Tab
+    Validate Existence Of Outlet Tab
+    Validate Existence Of Filter Options
+    Validate Existence Of Cards In The Page
     Validate Card Elements
 
 

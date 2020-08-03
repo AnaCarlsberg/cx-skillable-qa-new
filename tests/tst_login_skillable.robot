@@ -1,6 +1,6 @@
 *** Settings ***
 Suite Setup        Apply Browser Settings 
-Suite Teardown     Close Browser
+#Suite Teardown     Close Browser
 Library           SeleniumLibrary
 Library           DateTime
 Library           BuiltIn
@@ -11,7 +11,7 @@ Resource          ../pagesObjects/home_page.robot
 
 *** Test Cases ***
 Login in Skillable
-    Navigate to Skillable
-    Login with Microsoft Account
+    Navigate To Skillable
+    Login With Microsoft Account
     Validate Home Page
     Access Skillable Page

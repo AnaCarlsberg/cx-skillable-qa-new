@@ -8,8 +8,8 @@ Resource    ../keywords/api_common.robot
 # API GET Markets in Skillable
 #     API GET Markets in Skillable
 
-# API GET Outlets in Markets
-#     API GET Outlets in Markets
+API GET Outlets in Markets
+    API GET Outlets in Markets
 
 # API GET Markets Invite
 #     API GET Markets Invite

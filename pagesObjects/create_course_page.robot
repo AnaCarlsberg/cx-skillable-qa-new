@@ -17,37 +17,37 @@ ${create_button}        //*[@id="child-app"]/div/div/div/div[7]/button
 
 
 *** Keywords ***
-Click on X button to exit page
+Click On X Button To Exit Page
     Click Element   ${exit_button}
 
-Click Cancel on pop up window
+Click Cancel On Pop Up Window
     Click Element   ${cancel_button} 
 
-Click on Yes on pop up window
+Click On Yes On Pop Up Window
     Click Element   ${yes_button} 
 
-Field title is present
-    Page Should Contain Element  ${title_field_label} 
+Field Title Is Present
+    Page Should COntain Element  ${title_field_label} 
 
-Input more that 64 characters
+Input More Than 64 Characters
     Input Text  ${title_input_field}     Input Text for testInput Text for testInput Text for Input Text for test 
 
-Input a valid title
+Input A Valid Title
     Input Text  ${title_input_field}     Ana Automation Course
 
-Error message for more than 64 characters
+Error Message For More Than 64 Characters
     Page Should Contain Element    ${error_message} 
    
-Clear Title field
+Clear Title Field
     Clear Element Text  id=${title_input_field}  
 
-Click on language field
+Click On Language Field
     Click Element   ${language_field}
 
-Choose a language
+Choose A Language
     Click Element   ${choose_language} 
 
-Click on Create button
+Click On Create Button
     Click Element   ${create_button} 
 
 

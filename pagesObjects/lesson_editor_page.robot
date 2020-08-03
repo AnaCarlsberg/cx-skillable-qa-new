@@ -20,16 +20,16 @@ ${cancel_lesson_title}      //*[contains(text(), "Text for Cancel Lesson Automat
 
 
 *** Keywords ***
-Insert title in Cover Card for Publish
+Insert Title In Cover Card For Publish
     Input Text  ${lesson_title}     Text for Lesson Automation 
 
-Insert title in Cover Card for Draft
+Insert Title In Cover Card For Draft
     Input Text  ${lesson_title}     Text for Draft Lesson Automation 
 
-Insert title in Cover Card for Cancel
+Insert Title In Cover Card For Cancel
     Input Text  ${lesson_title}     Text for Cancel Lesson Automation 
 
-Click on Add Card
+Click On Add Card
     Click Element   ${add_card} 
 
 Insert Regular Card
@@ -41,25 +41,25 @@ Insert Separator Card
 Insert Quiz Card
     Click Element   ${quiz_card}
 
-Click on button Publish Lesson
+Click On Button Publish Lesson
     Click Element   ${publish_button} 
 
-Created Lesson should be on course list
+Validate That Created Lesson Is On Course List
     Page Should Contain Element    ${publish_lesson_title}  
 
-Click on button Draft
+Click On Button Draft
     Click Element   ${draft_button}  
 
-Draft Lesson should be on course list
+Validate That Draft Lesson Is On Course List
     Page Should Contain Element     ${draft_lesson_title}  
 
-Draft Lesson should contain Draft status
+Validate That Draft Lesson Contains The Draft Status
     Page Should Contain Element    ${draft_icon} 
 
-Click on Cancel button
+Click On Cancel Button
     Click Element   ${cancel_button} 
 
-Canceled Lesson should not be on course list
+Validate That Canceled Lesson Is Not On Course List
     Page Should Not Contain Element     ${cancel_lesson_title} 
 
 
